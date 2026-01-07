@@ -90,13 +90,6 @@ Password: 1234
 
 
 
-Mini-Bank-System/
-│
-├── main.cpp
-├── Clients Data.txt
-├── Users.txt
-└── README.md
-
 
 
 👨‍💻 Author
