@@ -1,8 +1,11 @@
-# 🏦 Mini Banking System (C++ Console Application)
+# 🏦 Mini Bank System (C++ Console Application)
 
-A fully functional **Console-based Banking System** built using **C++**,  
-demonstrating core programming concepts such as file handling, data structures,
-authentication, authorization, and role-based access control.
+A complete **console-based banking system** implemented in **C++**,  
+designed to simulate real-world banking operations with **authentication, authorization,
+role-based permissions**, and **persistent data storage** using files.
+
+This project demonstrates solid understanding of **C++ fundamentals**,  
+**file handling**, **data structures**, and **system design concepts**.
 
 ---
 
@@ -10,19 +13,20 @@ authentication, authorization, and role-based access control.
 
 ### 🔐 Authentication & Authorization
 - Secure login system
-- Role-based permissions using bitmasking
+- Role-based access control using **bitmask permissions**
 - Admin and normal users support
+- Permission validation before accessing system features
 
 ### 👥 Client Management
 - Add new clients
 - Update client information
 - Delete clients
-- Find clients
-- Display clients list
+- Find clients by account number
+- Display all clients in a formatted table
 
 ### 💰 Transactions
 - Deposit money
-- Withdraw money (with balance validation)
+- Withdraw money with balance validation
 - Display total balance of all clients
 
 ### 👤 User Management (Admin Only)
@@ -36,9 +40,10 @@ authentication, authorization, and role-based access control.
 
 ## 🧠 Permissions System
 
-Each user has specific permissions that control access to system features:
+Each user has a set of permissions that controls what actions they can perform.
 
-- Show Clients
+Permissions include:
+- Show Clients List
 - Add Client
 - Update Client
 - Delete Client
@@ -47,7 +52,7 @@ Each user has specific permissions that control access to system features:
 - Manage Users
 - Full Access (Admin)
 
-Permissions are implemented using **bitmasking**, similar to real-world systems.
+Permissions are implemented using **bitmasking**, similar to real banking and enterprise systems.
 
 ---
 
@@ -55,28 +60,47 @@ Permissions are implemented using **bitmasking**, similar to real-world systems.
 
 - Clients data stored in: `Clients Data.txt`
 - Users data stored in: `Users.txt`
-- Data is persistent using file I/O (no database)
+- Data is persistent using **file I/O** (no database required)
 
 ---
 
 ## 🛠 Technologies Used
 
 - C++
-- STL (vector, string, iostream, fstream)
+- STL (vector, string, iostream, fstream, iomanip)
 - File Handling
-- Console UI
+- Console-based UI
+- Bitmask Permissions System
 
 ---
 
-
 ## ▶️ How to Compile & Run
 
-Using g++:
+Using **g++**:
+
 ```bash
 g++ main.cpp -o MiniBankSystem
 ./MiniBankSystem
 
 
+Default Login Credentials
 
 Username: Admin
 Password: 1234
+
+
+
+Mini-Bank-System/
+│
+├── main.cpp
+├── Clients Data.txt
+├── Users.txt
+└── README.md
+
+
+
+👨‍💻 Author
+
+Mohamed
+C++ Junior Developer / Computer Teacher
+
