@@ -68,9 +68,14 @@ Permissions are implemented using **bitmasking**, similar to real-world systems.
 
 ---
 
-## ▶️ How to Run
 
-1. Clone the repository: git clone https://github.com/mohamed2003-mgd/Mini-Bank-System.git
+## ▶️ How to Compile & Run
+
+Using g++:
+```bash
+g++ main.cpp -o MiniBankSystem
+./MiniBankSystem
+
 
 
 Username: Admin
